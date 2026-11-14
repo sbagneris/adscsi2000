@@ -1,0 +1,48 @@
+GAL16V8
+ADSCSIU4
+
+GALCLK DRQ  ZA2  ZA3  ZA4  ZA5  BUSRST SEL  NC9  GND
+OEGND ST7  U4P13 DMALED Q15  Q16  CS5380 DACK NC19 VCC
+
+/ST7.R = /DMALED * /CS5380
+    + ST7 * /Q15 * Q16 * CS5380 * DACK
+    + /ST7 * /Q16 * CS5380
+    + /ST7 * Q15 * CS5380
+
+U4P13.T = /ZA4 * /SEL * U4P13 * CS5380
+    + ZA2 * ZA3 * ZA4 * ZA5 * /CS5380
+    + BUSRST * U4P13 * CS5380
+    + ZA5 * BUSRST * U4P13
+U4P13.E = VCC
+
+/DMALED.T = BUSRST * /DMALED * CS5380
+    + ZA2 * ZA3 * ZA4 * ZA5 * /SEL
+    + /ZA2 * /ZA3 * /ZA4 * ZA5 * /SEL
+    + ZA5 * BUSRST * /DMALED
+DMALED.E = VCC
+
+Q15.R = DRQ * CS5380
+
+Q16.R = CS5380 * /DACK
+    + Q15 * CS5380
+
+CS5380.T = /ZA2 * ZA3 * ZA4 * ZA5
+    + /ZA2 * /ZA3 * /ZA4 * ZA5
+    + SEL
+CS5380.E = VCC
+
+/DACK.T = /ZA2 * ZA3 * ZA4 * ZA5 * BUSRST * /SEL * /DMALED * Q15 * Q16
+    + ZA2 * ZA3 * ZA4 * ZA5 * /SEL * /ST7 * Q15 * Q16
+    + ZA5 * BUSRST * /ST7 * Q15 * /DACK
+    + BUSRST * SEL * /ST7 * /DMALED * Q15 * Q16
+    + /ZA2 * /ZA3 * /ZA4 * ZA5 * /SEL * ST7 * /DACK
+    + /ZA2 * /ZA3 * /ZA4 * ZA5 * /SEL * Q15 * Q16
+    + /ZA2 * ZA3 * ZA4 * ZA5 * BUSRST * /SEL * ST7 * /DACK
+DACK.E = VCC
+
+NC19.T = GND
+NC19.E = GND
+
+DESCRIPTION
+
+AdSCSI 2000 U4, equivalent equations fitted from the original chip's recorded behaviour (gals/u4). Pin names are the board nets measured on 2026-11-08 (schematic/netlist/gal_nets.csv).

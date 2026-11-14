@@ -1,0 +1,6 @@
+date	note	pull	min_switch	moves	pulses	odd	double	other	rate	ci95_lo	ci95_hi
+2026-11-07 17:01	100nF pin20-pin10 at chip, dupont GND jumper	low	3	976	9760	0	0	0	0.0000	0.0000	0.0004
+2026-11-07 17:04	100nF pin20-pin10 at chip, dupont GND jumper; all CLK moves once vs corrected table	low	0	7088	7088	0	0	0	0.0000	0.0000	0.0005
+2026-11-07 17:14	NO cap (control), dupont GND jumper	low	3	976	9760	77	77	0	0.0079	0.0063	0.0098
+2026-11-07 17:20	NO cap, outputs pulled HIGH, pulls switched IN THE SAME WRITE as the CLK edge (8 dupico lines switch at the edge; confounded), dupont GND jumper	high	3	976	9760	166	166	0	0.0170	0.0146	0.0198
+2026-11-07 17:26	NO cap, outputs pulled HIGH, pulls set BEFORE the edge (only CLK switches), dupont GND jumper	high	3	976	9760	74	74	0	0.0076	0.0060	0.0095

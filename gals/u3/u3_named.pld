@@ -1,0 +1,36 @@
+GAL16V8
+ADSCSIU3
+
+ZREAD ZA1  ZA2  ZA3  ZA4  GAME ZA6  ZA15 MATCH GND
+ZAS  ROMOE SEL  U2OE SLAVE U2CK ZUDS BUSRST STATOE VCC
+
+/ROMOE.T = ZREAD * /ZA15 * U2OE * /SLAVE
+    + ZREAD * GAME * ZA15 * /SLAVE
+ROMOE.E = VCC
+
+/SEL.T = /ZA6 * /ZA15 * /U2OE * /SLAVE
+SEL.E = VCC
+
+U2OE.T = U2OE * /SLAVE
+    + /U2CK
+U2OE.E = VCC
+
+/SLAVE.T = /MATCH * /ZAS * BUSRST
+SLAVE.E = VCC
+
+U2CK.T = /ZREAD * /ZA1 * /ZA2 * ZA3 * /ZA4 * ZA6 * /SLAVE * /ZUDS * BUSRST
+    + U2CK * BUSRST
+U2CK.E = VCC
+
+/STATOE.T = ZREAD * /ZA15 * SEL * /U2OE * /SLAVE
+STATOE.E = VCC
+
+ZUDS.T = GND
+ZUDS.E = GND
+
+BUSRST.T = GND
+BUSRST.E = GND
+
+DESCRIPTION
+
+AdSCSI 2000 U3, equivalent equations fitted from the original chip's recorded behaviour (gals/u3). Pin names are the board nets measured on 2026-11-08 (schematic/netlist/gal_nets.csv).

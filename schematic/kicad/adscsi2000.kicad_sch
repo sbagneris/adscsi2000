@@ -1,0 +1,294 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "64e2376e-0dff-5e7e-8bfb-63d96d9bef54")
+	(paper "A4")
+	(title_block
+		(title "ICD AdSCSI 2000 (Advantage 2000) - Zorro II SCSI controller")
+		(comment 1 "Reverse engineered 2026 (preservation): netlist measured by continuity on Stephane's card")
+		(comment 2 "GAL equations: gals/uN/uN_named.pld (fitted from the secured originals)")
+	)
+	(lib_symbols)
+	(sheet
+		(at 152.4 50.8)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "40bdc13c-e168-5878-b75e-37501ff2aa8b")
+		(property "Sheetname" "Data buffers, latches and status"
+			(at 152.4 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "bus.kicad_sch"
+			(at 152.4 89.4716 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "adscsi2000"
+				(path "/64e2376e-0dff-5e7e-8bfb-63d96d9bef54"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 279.4 127)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "82901059-c0f7-5b91-bf3e-7b3556fe7403")
+		(property "Sheetname" "Drive power and decoupling"
+			(at 279.4 126.2884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 279.4 165.6716 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "adscsi2000"
+				(path "/64e2376e-0dff-5e7e-8bfb-63d96d9bef54"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 279.4 50.8)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "aafe88b1-8abb-5dc8-bf91-bc76867a5d03")
+		(property "Sheetname" "5380 control and bus sequencing"
+			(at 279.4 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "control.kicad_sch"
+			(at 279.4 89.4716 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "adscsi2000"
+				(path "/64e2376e-0dff-5e7e-8bfb-63d96d9bef54"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 152.4 127)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d2abe3b1-7c34-511b-bf8b-c4d70ddb2774")
+		(property "Sheetname" "Boot ROM"
+			(at 152.4 126.2884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rom.kicad_sch"
+			(at 152.4 165.6716 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "adscsi2000"
+				(path "/64e2376e-0dff-5e7e-8bfb-63d96d9bef54"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 127)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d740f516-8b25-53c8-bd66-bfeda49f7bb7")
+		(property "Sheetname" "SCSI controller, connectors and termination"
+			(at 25.4 126.2884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "scsi.kicad_sch"
+			(at 25.4 165.6716 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "adscsi2000"
+				(path "/64e2376e-0dff-5e7e-8bfb-63d96d9bef54"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 50.8)
+		(size 101.6 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f9977fd0-2f63-540b-ae0b-ea33ca660954")
+		(property "Sheetname" "Zorro interface, decode and Autoconfig"
+			(at 25.4 50.0884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "zorro.kicad_sch"
+			(at 25.4 89.4716 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "adscsi2000"
+				(path "/64e2376e-0dff-5e7e-8bfb-63d96d9bef54"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

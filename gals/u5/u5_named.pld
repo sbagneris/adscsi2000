@@ -1,0 +1,51 @@
+GAL16V8
+ADSCSIU5
+
+IRQ  CS5380 DACK SEL  ZREAD DOE  DMALED U4P13 ST7  GND
+SLAVE INT2 IOW  IOR  RDOE U8OE U11OE LATCHCK XRDY VCC
+
+/IOW.T = /DACK * /U4P13 * /U11OE
+    + /DACK * /SEL * /ZREAD
+    + /CS5380 * /SEL * /ZREAD
+IOW.E = VCC
+
+/IOR.T = /DACK * U4P13 * /ST7 * /LATCHCK
+    + /CS5380 * /SEL * ZREAD
+    + /DACK * /SEL * ZREAD
+IOR.E = VCC
+
+/RDOE.T = /SEL * ZREAD * DOE * /LATCHCK
+    + /SEL * DOE * /DMALED * /IOR
+RDOE.E = VCC
+
+U8OE.T = /CS5380 * /DMALED * /U4P13 * /ST7
+    + /CS5380 * ZREAD * /DMALED
+    + ZREAD * /DMALED * /IOR
+    + ZREAD * /DOE
+    + /ZREAD * /U11OE
+    + SEL * SLAVE
+    + SEL * /DMALED
+U8OE.E = VCC
+
+/U11OE.T = /CS5380 * /SEL * /ZREAD * /DMALED * /U4P13 * /ST7
+    + /DMALED * /ST7 * /U11OE
+    + /DACK * /DMALED * /U4P13 * /ST7
+U11OE.E = VCC
+
+/LATCHCK.T = /CS5380 * /SEL * /ZREAD * /DMALED
+    + /DACK * /SEL * /DMALED * /ST7
+    + /CS5380 * /SEL * /DMALED * /ST7
+    + /DACK * /SEL * /ZREAD * /DMALED
+    + /DACK * /DMALED * U4P13 * /ST7
+LATCHCK.E = VCC
+
+XRDY.T = /DACK * ST7
+    + /CS5380
+XRDY.E = /SEL * /DMALED
+
+INT2.T = GND
+INT2.E = GND
+
+DESCRIPTION
+
+AdSCSI 2000 U5, equivalent equations fitted from the original chip's recorded behaviour (gals/u5). Pin names are the board nets measured on 2026-11-08 (schematic/netlist/gal_nets.csv).

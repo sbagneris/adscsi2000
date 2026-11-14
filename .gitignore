@@ -1,0 +1,4 @@
+*.kicad_prl
+schematic/mosaic_*.jpg
+__pycache__/
+.venv/

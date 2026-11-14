@@ -1,0 +1,51 @@
+pin,function,expected,todo,found,notes
+U12.1,VPP,VCC,check against U2.20 (VCC),VCC,
+U12.2,A12,Zorro A13: P1.39,confirm P1.39; then sweep for further endpoints,P1.39,
+U12.3,A7,Zorro A8: P1.30,confirm P1.30; then sweep for further endpoints,P1.30,
+U12.4,A6,Zorro A7: P1.28,confirm P1.28; then sweep for further endpoints,P1.28,
+U12.11,D0,"internal data bus: expect U6 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U6 socket first","U6.1, U2.3, U11.2, U9.2, U8.2, U10.3",
+U12.12,D1,"internal data bus: expect U6 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U6 socket first","U6.40, U2.4, U11.5, U9.3, U8.3, U10.4",
+U12.13,D2,"internal data bus: expect U6 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U6 socket first","U6.39, U2.7, U11.6, U9.4, U8.4, U10.7",
+U12.14,GND,GND,check against U2.10,GND,
+U12.15,D3,"internal data bus: expect U6 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U6 socket first","U6.38, U2.8, U11.9, U9.5, U8.5, U10.8",
+U12.16,D4,"internal data bus: expect U6 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U6 socket first","U6.37, U2.13, U11.12, U9.6, U8.6, U10.13",
+U12.17,D5,"internal data bus: expect U6 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U6 socket first","U6.36, U2.14, U11.15, U9.7, U8.7, U10.14",
+U12.18,D6,"internal data bus: expect U6 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U6 socket first","U6.35, U2.17, U11.16, U9.8, U8.8, U10.17",
+U12.19,D7,"internal data bus: expect U6 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U6 socket first","U6.34, U2.18, U11.19, U9.9, U8.9, U10.18",
+U12.20,/CE,GND or a GAL output,check against U2.10 (GND); else sweep,GND,
+U12.21,A10,Zorro A11: P1.36,confirm P1.36; then sweep for further endpoints,P1.36,
+U12.23,A11,Zorro A12: P1.38,confirm P1.38; then sweep for further endpoints,P1.38,
+U12.24,A9,Zorro A10: P1.34,confirm P1.34; then sweep for further endpoints,P1.34,
+U12.25,A8,Zorro A9: P1.32,confirm P1.32; then sweep for further endpoints,P1.32,
+U12.26,A13,Zorro A14: P1.41,confirm P1.41; then sweep for further endpoints,P1.41,
+U12.28,VCC,VCC,check against U2.20,VCC,
+U6.1,D0,"internal data bus: expect U12 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U12 socket first","U12.11, U2.3, U11.2, U9.2, U8.2, U10.3",
+U6.2,/DB7,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP4.9, P2.26, P3.16",Pin 1 of 2x13 IDC male connector (P2) is top right.
+U6.3,/DB6,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP4.8, P2.24, P3.14",Pin 1 of 2x25 IDC male connector (P3) is bottom right.
+U6.4,/DB5,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP4.7, P2.22, P3.12",Pin 1 of RP4 and RP5 termination resistor packs is indicated by notch on silkscreen and is at the top.
+U6.5,/DB4,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP4.6, P2.19, P3.10",
+U6.6,/DB3,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP4.5, P2.20, P3.8",
+U6.7,/DB2,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP4.4, P2.17, P3.6",
+U6.8,/DB1,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP4.3, P2.15, P3.4",
+U6.9,/DB0,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP4.2, P2.16, P3.2",
+U6.10,/DBP,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP5.9, P2.13, P3.18",
+U6.11,GND,GND,check against U2.10,GND,
+U6.12,/SEL,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP5.5, P2.11, P3.44",
+U6.13,/BSY,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP5.8, P2.12, P3.36",
+U6.14,/ACK,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP5.7, P2.10, P3.38",
+U6.15,/ATN,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","P2.7, P3.32",No termination
+U6.16,/RST,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","P2.8, P3.40",No termination
+U6.17,/I/O,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP5.2, P2.6, P3.50",
+U6.18,/C/D,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP5.4, P2.3, P3.46",
+U6.19,/MSG,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP5.6, P2.4, P3.42",
+U6.20,/REQ,"SCSI bus: P3 (50-pin, internal) and P2 (26-pin, external) + a terminator pin on RP4/RP5","sweep P3, P2, RP4, RP5 (note the P3 and P2 pin numbers carefully)","RP5.3, P2.2, P3.48",
+U6.25,READY,"unused? (pull-up, GND or open)",sweep everything; note if nothing,Unconnected.,"~380kOhm to ground, increasing in restance."
+U6.27,/EOP,"unused? (pull-up, GND or open)",sweep everything; note if nothing,RP3.8,Pin 1 is at notch on silkscreen
+U6.31,VDD,VDD,check against U2.20,VDD,VDD = VCC
+U6.34,D7,"internal data bus: expect U12 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U12 socket first","U12.19, U2.18, U11.19, U9.9, U8.9, U10.18",
+U6.35,D6,"internal data bus: expect U12 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U12 socket first","U12.18, U2.17, U11.16, U9.8, U8.8, U10.17",
+U6.36,D5,"internal data bus: expect U12 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U12 socket first","U12.17, U2.14, U11.15, U9.7, U8.7, U10.14",
+U6.37,D4,"internal data bus: expect U12 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U12 socket first","U12.16, U2.13, U11.12, U9.6, U8.6, U10.13",
+U6.38,D3,"internal data bus: expect U12 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U12 socket first","U12.15, U2.8, U11.9, U9.5, U8.5, U10.8",
+U6.39,D2,"internal data bus: expect U12 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U12 socket first","U12.13, U2.7, U11.6, U9.4, U8.4, U10.7",
+U6.40,D1,"internal data bus: expect U12 D0-D7, U10/U11 D or Q pins, U8/U9 B side, U7 B side","sweep U8/U9, U10/U11, U12 socket first","U12.12, U2.4, U11.5, U9.3, U8.3, U10.4",

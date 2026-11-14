@@ -1,0 +1,56 @@
+# galfit.py u5/u5_moves.tsv --mode complex --regs -
+# array inputs V = ['P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'P9', 'P11', 'P13', 'P14', 'P15', 'P16', 'P17', 'P18']
+# 12080 moves, 1208 settled nodes
+# refinement from multi-pin moves: converged
+# function: on/off points, polarity, terms, fits the GAL term limit
+#   oe12: on 0 off 4256, pos, 0 terms
+#   f13: on 2088 off 1144, neg, 3 terms
+#   oe13: on 3232 off 0, pos, 1 terms
+#   f14: on 2400 off 800, neg, 3 terms
+#   oe14: on 3200 off 0, pos, 1 terms
+#   f15: on 3600 off 264, neg, 2 terms
+#   oe15: on 3864 off 0, pos, 1 terms
+#   f16: on 2580 off 1260, pos, 7 terms
+#   oe16: on 3840 off 0, pos, 1 terms
+#   f17: on 2780 off 1252, neg, 3 terms
+#   oe17: on 4032 off 0, pos, 1 terms
+#   f18: on 1864 off 1116, neg, 5 terms
+#   oe18: on 2980 off 0, pos, 1 terms
+#   f19: on 1012 off 560, pos, 2 terms
+#   oe19: on 1572 off 2040, pos, 1 terms
+# validation: {'exact': 12080}; settled nodes stable in the model: 1208/1208
+# power-up state 1001110Z with inputs 0: stable in the model: True
+
+P12.E = GND
+/P13 = /P3 * /P8 * /P17
+    + /P3 * /P4 * /P5
+    + /P2 * /P4 * /P5
+P13.E = VCC
+/P14 = /P3 * P8 * /P9 * /P18
+    + /P2 * /P4 * P5
+    + /P3 * /P4 * P5
+P14.E = VCC
+/P15 = /P4 * P5 * P6 * /P18
+    + /P4 * P6 * /P7 * /P14
+P15.E = VCC
+P16 = /P2 * /P7 * /P8 * /P9
+    + /P2 * P5 * /P7
+    + P5 * /P7 * /P14
+    + P5 * /P6
+    + /P5 * /P17
+    + P4 * P11
+    + P4 * /P7
+P16.E = VCC
+/P17 = /P2 * /P4 * /P5 * /P7 * /P8 * /P9
+    + /P7 * /P9 * /P17
+    + /P3 * /P7 * /P8 * /P9
+P17.E = VCC
+/P18 = /P2 * /P4 * /P5 * /P7
+    + /P3 * /P4 * /P7 * /P9
+    + /P2 * /P4 * /P7 * /P9
+    + /P3 * /P4 * /P5 * /P7
+    + /P3 * /P7 * P8 * /P9
+P18.E = VCC
+P19 = /P3 * P9
+    + /P2
+P19.E = /P4 * /P7

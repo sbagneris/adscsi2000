@@ -1,0 +1,56 @@
+# GAL pin readings from the socketless high-res photo (inputs/closeups_nosockets/component_GAL_hires.jpeg, IMG_2659),
+# component side read by eye; solder side from solder_nets.py (reliable). conf: high / medium / low.
+# "->" = trace leaves the pad toward ...; "passes" = crosses the footprint without touching that chip's pads.
+# Board style: traces arriving at a pad's height often jog half a pitch and pass BETWEEN the near-column pads,
+# then land on the far column (U3.3/4/5 -> U4.3/4/5, read by Stephane, confirmed in the photo).
+pin	reading	conf	source
+U3.1	-> right, passes under U4 (between U4.2/U4.1) and U5, toward U6; solder: U8.1, V181	high	photo+solder
+U3.2	-> left, around V45 (not touching), then right along the bottom under U4, toward U5	medium	photo
+U3.3	= U4.3	high	Stephane+photo
+U3.4	= U4.4	high	Stephane+photo
+U3.5	= U4.5 (U4.5 continues right toward U5)	high	Stephane+photo
+U3.6	no copper seen on either side	low	photo
+U3.7	junction with U3.15, V25 and a trace right (y~262): U3.7 = U3.15 = V25 ?	low	photo (beep U3.7-U3.15)
+U3.8	solder: U12.27 (U12.28 = VCC claimed by an earlier photo pass)	medium	solder
+U3.9	<- from the left (U2 side), lands on the pad	high	photo
+U3.10	GND (thick bar to the top fill + via to the solder-side ground bus)	high	photo
+U3.11	-> stub right, diagonal under U3, exits right between U3.9/U3.8, passes under U4 (12/13) toward U5; may merge with U4.13's stub	medium	photo
+U3.12	solder: DC12.2 (long trace leaving upward)	medium	solder
+U3.13	-> right under U3 (8/7) and U4 (13/14) toward U5; solder: V2, V20; V20 -> U4.14 (component) => U3.13 = U4.14	high	photo+solder
+U3.14	solder: V44, V75	medium	solder
+U3.15	see U3.7	low	photo
+U3.16	solder: trace far up-left, destination not found	low	solder
+U3.17	solder: V45	medium	solder
+U3.18	= V35 (left) = V41 (right, under U3 between 3/2); V41 = U4.7 on the solder side => U3.18 = U4.7	high	photo+solder
+U3.19	-> left toward U2	high	photo
+U3.20	VCC (thick trace down)	high	photo
+U4.1	solder: J2.2, J2.3, V72	high	solder
+U4.2	solder: V11, V69	high	solder
+U4.3	= U3.3; solder: V47	high	photo+solder
+U4.4	= U3.4; solder: V58	high	photo+solder
+U4.5	= U3.5, -> right	high	photo
+U4.6	-> right	medium	photo
+U4.7	= V41 (solder) = U3.18; component -> right	medium	photo+solder
+U4.8	-> right to a via	medium	photo
+U4.9	no copper seen (logic never uses it)	medium	photo
+U4.10	GND	high	photo
+U4.11	= U4.10 (thick bar): /OE tied to GND, registers always enabled	high	photo
+U4.12	<- the trace that crosses over U3 diagonally from the far left; = V19 (stub right)	high	photo
+U4.13	stub right, may merge into the pass-through above (=> U3.11?)	low	photo
+U4.14	= V20 => = U3.13	high	photo+solder
+U4.15	no copper seen; V23 is adjacent but no link visible (register: may be internal state only)	low	photo
+U4.16	no copper seen (register: may be internal state only)	low	photo
+U4.17	no copper seen	low	photo
+U4.18	no copper seen	low	photo
+U4.19	no copper seen	low	photo
+U4.20	VCC; solder: V56	high	photo+solder
+U5.1	= V48	high	photo
+U5.2	= V42	high	photo
+U5.4	<- from the left (y~120 in the U5 crop)	medium	photo
+U5.10	GND	high	photo
+U5.11	<- from the left	high	photo
+U5.16	= V26	high	photo
+U5.17	solder: U11.1	medium	solder
+U5.18	solder: U11.11	medium	solder
+U5.20	VCC; solder: DC5.1	high	photo+solder
+U5.3,5-9,12-15,19	diagonal staircase inside the footprint not resolved from the photo	low	photo
