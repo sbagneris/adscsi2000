@@ -12870,7 +12870,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:DIP-20_W7.62mm"
 			(at 63.5 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -12894,6 +12894,16 @@
 		)
 		(property "Description" ""
 			(at 63.5 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "bus buffer D8-D15"
+			(at 63.5 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13002,7 +13012,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:DIP-20_W7.62mm"
 			(at 157.48 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -13026,6 +13036,16 @@
 		)
 		(property "Description" ""
 			(at 157.48 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "write latch (D0-D7)"
+			(at 157.48 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13353,7 +13373,7 @@
 				)
 			)
 		)
-		(property "Value" "J1 ID/GAME/B/A"
+		(property "Value" "2x6 pin header"
 			(at 342.9 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13363,7 +13383,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:PinHeader_2x06_P2.54mm_ColNumbered"
 			(at 342.9 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -13387,6 +13407,16 @@
 		)
 		(property "Description" ""
 			(at 342.9 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "ID / GAME / B / A jumpers"
+			(at 342.9 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13461,7 +13491,7 @@
 				)
 			)
 		)
-		(property "Value" "RP3 pull-ups"
+		(property "Value" "10k x7 bussed 2% (8C103G)"
 			(at 342.9 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13471,7 +13501,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:SIP-8_P2.54mm"
 			(at 342.9 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -13495,6 +13525,16 @@
 		)
 		(property "Description" ""
 			(at 342.9 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "pull-ups (J1, /EOP)"
+			(at 342.9 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13644,7 +13684,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:DIP-20_W7.62mm"
 			(at 157.48 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -13668,6 +13708,16 @@
 		)
 		(property "Description" ""
 			(at 157.48 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "read latch (D8-D15)"
+			(at 157.48 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14071,7 +14121,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS245 status"
+		(property "Value" "74LS245"
 			(at 254 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14081,7 +14131,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:DIP-20_W7.62mm"
 			(at 254 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -14105,6 +14155,16 @@
 		)
 		(property "Description" ""
 			(at 254 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "status buffer"
+			(at 254 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14673,7 +14733,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:DIP-20_W7.62mm"
 			(at 63.5 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -14697,6 +14757,16 @@
 		)
 		(property "Description" ""
 			(at 63.5 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "read buffer D0-D7"
+			(at 63.5 190.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

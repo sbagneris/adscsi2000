@@ -1,0 +1,8 @@
+# DRC warnings accepted on purpose; tools/pcb_exclude.py turns each into a KiCad DRC exclusion (with this reason as
+# the comment) for the current board's item ids, as the last step of pcb_finish.sh. type = KiCad DRC type, pad = REF.PIN
+type	pad	reason
+starved_thermal	DC6.2	single thermal spoke; pad also connected on the other layer; logic-level GND current (alternative cap pad)
+starved_thermal	DC6.3	single thermal spoke; pad also connected on the other layer; logic-level GND current (alternative cap pad)
+starved_thermal	DC7.2	single thermal spoke; pad also connected on the other layer; logic-level GND current
+starved_thermal	U12.20	single thermal spoke; pad also connected on the other layer; /CE tied low, static
+starved_thermal	P3.3	single thermal spoke; pad also connected on the other layer; one of 25 SCSI GND pins

@@ -1,0 +1,14 @@
+# GND vias added by hand in KiCad (Stephane, 2026-11-15) to tie fill fragments flagged as isolated to the opposite
+# pour; replayed by tools/pcb_manual.py at the end of pcb_finish.sh (before cleanup and labels). x, y in mm.
+net	x	y	diameter	drill
+GND	34.5	12.5	0.7	0.35
+GND	42.5	13.5	0.7	0.35
+GND	49.0	17.0	0.7	0.35
+GND	53.0	21.0	0.7	0.35
+GND	67.5	15.5	0.7	0.35
+GND	78.5	13.0	0.7	0.35
+GND	86.5	13.0	0.7	0.35
+GND	120.5	70.0	0.7	0.35
+GND	172.0	81.0	0.7	0.35
+# (Claude, 2026-11-15) ties the B.Cu fragment next to P3.7 to the F.Cu pour (P3.7 itself is solid: manual_pads.tsv)
+GND	168.94	78.97	0.7	0.35

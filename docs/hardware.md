@@ -20,10 +20,15 @@ characterisation (`gals/`), and the boot ROM's behaviour. Signal names match the
 | U10 | 74LS374 | Read latch: internal data bus -> Zorro D8-D15 (first byte of 16-bit reads) |
 | U11 | 74LS374 | Write latch: Zorro D0-D7 -> internal data bus (second byte of 16-bit writes) |
 | U12 | 27C256 EPROM (socketed) | Boot ROM, even byte lane (D8-D15) |
-| RP1 / RP2 | SIP pull-up / pull-down | Hold the comparator at $E8 (Autoconfig space) until the base address is latched |
-| RP3 | SIP pull-ups | J1 jumper inputs, 5380 /EOP |
-| RP4 / RP5 | 220/330 ohm SIP terminators | SCSI termination of 16 signals; R2 / R3 pull up /ATN and /RST |
-| D1, F1 | diode, fuse | VCC -> D1 -> terminators; F1 -> TERMPWR on both SCSI connectors |
+| RP1 / RP2 | 1 kohm x5 bussed SIP, 2% (CG102G) | Pull-up / pull-down: hold the comparator at $E8 (Autoconfig space) until the base address is latched |
+| RP3 | 10 kohm x7 bussed SIP, 2% (8C103G) | Pull-ups: J1 jumper inputs, 5380 /EOP |
+| RP4 / RP5 | 220/330 ohm x8 SIP terminators | SCSI termination of 16 signals |
+| R1 | 100 ohm 5% | DMA LED |
+| R2 / R3 | 1 kohm 5% | /ATN and /RST pull-ups |
+| D1 | 1N5395 | VCC -> terminators and TERMPWR (silicon: ~4.1 V; a 1N5817/5818 Schottky gives ~4.6 V) |
+| F1 | 1 A fuse | TERMPWR on both SCSI connectors |
+| CE1 / CE2 | 47 uF 16 V | Bulk decoupling |
+| DC1-DC12 | 0.1 uF | Decoupling (3-hole footprint: 0.1" or 0.4" lead spacing) |
 
 ## Autoconfig and address decoding
 

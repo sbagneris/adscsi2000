@@ -13061,7 +13061,7 @@
 				)
 			)
 		)
-		(property "Value" "RP5 220/330"
+		(property "Value" "220/330 x8 terminator"
 			(at 330.2 215.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13071,7 +13071,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:SIP-10_P2.54mm"
 			(at 330.2 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -13095,6 +13095,16 @@
 		)
 		(property "Description" ""
 			(at 330.2 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "SCSI termination"
+			(at 330.2 218.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13163,7 +13173,7 @@
 				)
 			)
 		)
-		(property "Value" "R2 ATN pull-up"
+		(property "Value" "1k 5%"
 			(at 101.6 195.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13173,7 +13183,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:Axial_P10.16mm"
 			(at 101.6 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -13197,6 +13207,16 @@
 		)
 		(property "Description" ""
 			(at 101.6 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "/ATN pull-up"
+			(at 101.6 198.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13318,7 +13338,7 @@
 				)
 			)
 		)
-		(property "Value" "P3 SCSI internal"
+		(property "Value" "2x25 box header"
 			(at 241.3 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13328,7 +13348,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:IDC-Box_2x25_P2.54mm"
 			(at 241.3 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13352,6 +13372,16 @@
 		)
 		(property "Description" ""
 			(at 241.3 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "SCSI internal"
+			(at 241.3 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13617,7 +13647,7 @@
 				)
 			)
 		)
-		(property "Value" "F1 TERMPWR"
+		(property "Value" "1A fuse"
 			(at 254 233.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13627,7 +13657,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:Axial_P10.16mm_D1.0"
 			(at 254 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -13651,6 +13681,16 @@
 		)
 		(property "Description" ""
 			(at 254 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "TERMPWR"
+			(at 254 236.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13849,7 +13889,7 @@
 				)
 			)
 		)
-		(property "Value" "RP4 220/330"
+		(property "Value" "220/330 x8 terminator"
 			(at 330.2 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13859,7 +13899,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:SIP-10_P2.54mm"
 			(at 330.2 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -13883,6 +13923,16 @@
 		)
 		(property "Description" ""
 			(at 330.2 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "SCSI termination"
+			(at 330.2 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14577,7 +14627,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:DIP-40_W15.24mm_Socket"
 			(at 101.6 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -14601,6 +14651,16 @@
 		)
 		(property "Description" ""
 			(at 101.6 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "SCSI controller"
+			(at 101.6 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15219,7 +15279,7 @@
 				)
 			)
 		)
-		(property "Value" "P2 SCSI external (DB25)"
+		(property "Value" "2x13 box header"
 			(at 330.2 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15229,7 +15289,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:IDC-Box_2x13_P2.54mm"
 			(at 330.2 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -15253,6 +15313,16 @@
 		)
 		(property "Description" ""
 			(at 330.2 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "SCSI external (DB25 via IDC)"
+			(at 330.2 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15369,7 +15439,7 @@
 				)
 			)
 		)
-		(property "Value" "R3 RST pull-up"
+		(property "Value" "1k 5%"
 			(at 101.6 218.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15379,7 +15449,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:Axial_P10.16mm"
 			(at 101.6 213.36 0)
 			(hide yes)
 			(show_name no)
@@ -15403,6 +15473,16 @@
 		)
 		(property "Description" ""
 			(at 101.6 213.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "/RST pull-up"
+			(at 101.6 220.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15986,7 +16066,7 @@
 				)
 			)
 		)
-		(property "Value" "D1"
+		(property "Value" "1N5395"
 			(at 190.5 233.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15996,7 +16076,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:Diode_Axial_P10.16mm"
 			(at 190.5 228.6 0)
 			(hide yes)
 			(show_name no)
@@ -16020,6 +16100,16 @@
 		)
 		(property "Description" ""
 			(at 190.5 228.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "TERMPWR (a 1N5817/5818 Schottky gives ~0.5 V more)"
+			(at 190.5 236.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

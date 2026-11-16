@@ -1,0 +1,27 @@
+{
+  "_source": "Stephane's caliper measurements of his card, 2026-11-14 (the scan reads the bottom edges 0.2-0.35 mm short). Width (over 150 mm) and the hole positions stay from the scan: the measured top-left hole (7.56, 3.1) and vertical hole spacing (110.4) agree with it. Tab edge to first finger centre measured ~2.8 (approx); the scan's 3.23 (50-finger phase fit) is kept.",
+  "Hs": 116.85,
+  "Ht": 124.26,
+  "Tx": 44.59,
+  "holes": [
+    [
+      7.56,
+      3.1
+    ],
+    [
+      170.46,
+      3.1
+    ],
+    [
+      7.56,
+      113.5
+    ],
+    [
+      170.46,
+      113.5
+    ]
+  ],
+  "W": 173.85,
+  "finger0": 47.28,
+  "_width": "2026-11-14: finger tab length 129.26 mm = Zorro III mechanical spec (+/-0.1) = the scan's tab (calipers on the worn original: 129.40); W = tab start 44.59 + 129.26 = 173.85; right-hand holes 3.39 mm from the right edge (calipers, both); first finger centre = tab start + 2.69 (tab margin 129.26 - 49 x 2.54 = 4.80 split as on the scan: 2.69 / 2.11; calipers read ~2.8 / 2.62)"
+}

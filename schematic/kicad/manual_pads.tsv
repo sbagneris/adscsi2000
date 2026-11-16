@@ -1,0 +1,3 @@
+# Pad zone-connection overrides, replayed by tools/pcb_manual.py. connection: solid | thermal | none
+pad	connection	reason
+P3.7	solid	its single B.Cu spoke lands in a tiny fill fragment; KiCad's "isolated island" starved-thermal warning cannot be excluded (marker position not reported), so the pad connects solid instead

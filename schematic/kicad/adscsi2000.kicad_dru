@@ -1,0 +1,7 @@
+(version 1)
+(rule "Zorro edge fingers reach the card edge"
+  (condition "A.memberOfFootprint('P1')")
+  (constraint edge_clearance (min 0mm)))
+(rule "Mounting hole rings (centres 3.1 mm from the edge on the original)"
+  (condition "A.memberOfFootprint('H*')")
+  (constraint edge_clearance (min 0.3mm)))

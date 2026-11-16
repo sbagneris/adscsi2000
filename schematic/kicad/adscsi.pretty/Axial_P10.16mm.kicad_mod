@@ -1,0 +1,188 @@
+(footprint "Axial_P10.16mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "axial resistor, 0.4\" pitch")
+	(property "Reference" ""
+		(at 0 -2.5 0)
+		(layer "F.SilkS")
+		(uuid "163f178d-5978-4065-b3a9-744d0397c6a4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "d8c220ad-1cec-4143-ac3a-431f6802fe44")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "37ba6d39-33cf-4d5c-90cc-5bb221b14e42")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fae6891d-dd72-43d4-b291-7224d7be3762")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 1.39 -1.36)
+		(end 8.77 -1.36)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8247571b-9b68-4f1d-90fc-4266c1d082be")
+	)
+	(fp_line
+		(start 1.39 1.36)
+		(end 1.39 -1.36)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "20449581-1e83-4284-a13f-a07dc3fa2c39")
+	)
+	(fp_line
+		(start 8.77 -1.36)
+		(end 8.77 1.36)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c00e6d13-ae30-4dfe-ba99-031aeb6853f7")
+	)
+	(fp_line
+		(start 8.77 1.36)
+		(end 1.39 1.36)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5a584958-8b45-4d83-a78d-fc2b9aa744a7")
+	)
+	(fp_line
+		(start 1.25 -1.5)
+		(end 8.9 -1.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "2ff3a212-5421-402f-91ad-f4206fa323d3")
+	)
+	(fp_line
+		(start 1.25 1.5)
+		(end 1.25 -1.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "2110c1f6-92c8-4b99-a2dc-40bb7c23d716")
+	)
+	(fp_line
+		(start 8.9 -1.5)
+		(end 8.9 1.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "e0ef9128-b2cc-4b5b-b413-760f2cedfa16")
+	)
+	(fp_line
+		(start 8.9 1.5)
+		(end 1.25 1.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "a3a52fa0-c3a4-421a-8742-cc982553c61d")
+	)
+	(fp_line
+		(start 1.5 -1.25)
+		(end 8.66 -1.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "9dc6c1d8-ff1c-48da-ae55-3f8af220adce")
+	)
+	(fp_line
+		(start 1.5 1.25)
+		(end 1.5 -1.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "645bf33f-8698-4796-bc2e-3b9d2d15f97e")
+	)
+	(fp_line
+		(start 8.66 -1.25)
+		(end 8.66 1.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "e9e8a90c-4507-4f81-b1e9-13457a2e31bf")
+	)
+	(fp_line
+		(start 8.66 1.25)
+		(end 1.5 1.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "3e22311e-d7ef-4f59-820e-9eb8937f9c61")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f80833cc-c061-4f18-9a28-d114f1fb8d7a")
+	)
+	(pad "2" thru_hole circle
+		(at 10.16 0)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "af669170-d5cb-47f4-8fde-8718c55f711c")
+	)
+	(embedded_fonts no)
+)

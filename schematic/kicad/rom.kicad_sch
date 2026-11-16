@@ -9863,7 +9863,7 @@
 				)
 			)
 		)
-		(property "Value" "27C256 boot ROM (rev 1.7)"
+		(property "Value" "27C256"
 			(at 127 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9873,7 +9873,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:DIP-28_W15.24mm_Socket"
 			(at 127 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -9897,6 +9897,16 @@
 		)
 		(property "Description" ""
 			(at 127 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "boot ROM (rev 1.7)"
+			(at 127 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

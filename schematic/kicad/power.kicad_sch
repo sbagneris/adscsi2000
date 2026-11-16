@@ -9478,7 +9478,7 @@
 				)
 			)
 		)
-		(property "Value" "P5 drive power"
+		(property "Value" "4-pin floppy power, male"
 			(at 50.8 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9488,7 +9488,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:DrivePower_1x04_P2.54mm"
 			(at 50.8 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9512,6 +9512,16 @@
 		)
 		(property "Description" ""
 			(at 50.8 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "drive power"
+			(at 50.8 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9639,7 +9649,7 @@
 				)
 			)
 		)
-		(property "Value" "DC4 0.1u"
+		(property "Value" "0.1uF"
 			(at 279.4 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9649,7 +9659,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 279.4 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9673,6 +9683,16 @@
 		)
 		(property "Description" ""
 			(at 279.4 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 279.4 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9720,7 +9740,7 @@
 				)
 			)
 		)
-		(property "Value" "CE1"
+		(property "Value" "47uF 16V"
 			(at 50.8 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9730,7 +9750,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:CP_Radial_P2.54_D5.0"
 			(at 50.8 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -9754,6 +9774,16 @@
 		)
 		(property "Description" ""
 			(at 50.8 114.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "bulk decoupling"
+			(at 50.8 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10183,7 +10213,7 @@
 				)
 			)
 		)
-		(property "Value" "DC1 0.1u"
+		(property "Value" "0.1uF"
 			(at 127 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10193,7 +10223,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 127 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -10217,6 +10247,16 @@
 		)
 		(property "Description" ""
 			(at 127 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 127 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10340,7 +10380,7 @@
 				)
 			)
 		)
-		(property "Value" "DC10 0.1u"
+		(property "Value" "0.1uF"
 			(at 177.8 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10350,7 +10390,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 177.8 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -10374,6 +10414,16 @@
 		)
 		(property "Description" ""
 			(at 177.8 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 177.8 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10727,7 +10777,7 @@
 				)
 			)
 		)
-		(property "Value" "DC7 0.1u"
+		(property "Value" "0.1uF"
 			(at 228.6 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10737,7 +10787,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 228.6 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -10761,6 +10811,16 @@
 		)
 		(property "Description" ""
 			(at 228.6 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 228.6 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11269,7 +11329,7 @@
 				)
 			)
 		)
-		(property "Value" "DC5 0.1u"
+		(property "Value" "0.1uF"
 			(at 127 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11279,7 +11339,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 127 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -11303,6 +11363,16 @@
 		)
 		(property "Description" ""
 			(at 127 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 127 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11581,7 +11651,7 @@
 				)
 			)
 		)
-		(property "Value" "DC11 0.1u"
+		(property "Value" "0.1uF"
 			(at 228.6 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11591,7 +11661,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 228.6 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11615,6 +11685,16 @@
 		)
 		(property "Description" ""
 			(at 228.6 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 228.6 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11739,7 +11819,7 @@
 				)
 			)
 		)
-		(property "Value" "DC9 0.1u"
+		(property "Value" "0.1uF"
 			(at 127 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11749,7 +11829,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 127 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -11773,6 +11853,16 @@
 		)
 		(property "Description" ""
 			(at 127 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 127 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11820,7 +11910,7 @@
 				)
 			)
 		)
-		(property "Value" "DC3 0.1u"
+		(property "Value" "0.1uF"
 			(at 228.6 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11830,7 +11920,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 228.6 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -11854,6 +11944,16 @@
 		)
 		(property "Description" ""
 			(at 228.6 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 228.6 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12671,7 +12771,7 @@
 				)
 			)
 		)
-		(property "Value" "DC8 0.1u"
+		(property "Value" "0.1uF"
 			(at 279.4 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12681,7 +12781,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 279.4 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -12705,6 +12805,16 @@
 		)
 		(property "Description" ""
 			(at 279.4 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 279.4 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12983,7 +13093,7 @@
 				)
 			)
 		)
-		(property "Value" "DC6 0.1u"
+		(property "Value" "0.1uF"
 			(at 177.8 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12993,7 +13103,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 177.8 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13017,6 +13127,16 @@
 		)
 		(property "Description" ""
 			(at 177.8 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 177.8 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13064,7 +13184,7 @@
 				)
 			)
 		)
-		(property "Value" "DC12 0.1u"
+		(property "Value" "0.1uF"
 			(at 279.4 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13074,7 +13194,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 279.4 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -13098,6 +13218,16 @@
 		)
 		(property "Description" ""
 			(at 279.4 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 279.4 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13375,7 +13505,7 @@
 				)
 			)
 		)
-		(property "Value" "DC2 0.1u"
+		(property "Value" "0.1uF"
 			(at 177.8 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13385,7 +13515,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:C_Disc_3pad_P2.54_P10.16"
 			(at 177.8 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -13409,6 +13539,16 @@
 		)
 		(property "Description" ""
 			(at 177.8 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "decoupling"
+			(at 177.8 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13610,7 +13750,7 @@
 				)
 			)
 		)
-		(property "Value" "CE2"
+		(property "Value" "47uF 16V"
 			(at 50.8 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13620,7 +13760,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "adscsi:CP_Radial_P2.54_D5.0"
 			(at 50.8 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -13644,6 +13784,16 @@
 		)
 		(property "Description" ""
 			(at 50.8 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Function" "bulk decoupling"
+			(at 50.8 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
