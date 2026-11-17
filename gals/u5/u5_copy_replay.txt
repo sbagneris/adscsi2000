@@ -1,0 +1,11 @@
+# U5 copy check, 2026-11-16: ATF16V8B programmed from gals/u5/u5.jed (security fuse off; XGpro verify passed)
+# bench: dupico V3 fw 0.3.3, direct seating, GND jumper ZIF 10 -> 21, 100 nF across pins 20-10
+# command: galre.py replay gals/u5/u5_moves.tsv --chip 16v8 --seat direct --count 0
+# (first run: same 0 mismatches but FAIL on 27694 'state pin not driven' flags = galre bug: v0 tables carry no allow_z
+#  list, so the recorded Z of pins 19/12 was flagged; fixed in galre/table.py, rerun below)
+dupico model 3, firmware 0.3.3
+setup: GAL16V8 straight in the dupico ZIF42, top-aligned (chip pin 1 at ZIF 1, lever end); wire from ZIF 10 (the chip's GND pin) to ZIF 21; 100 nF capacitor across the chip's pins 20-10
+power-up state 1001110Z (original ['1001110Z']): same
+replayed 12080 of 12080 moves: 0 mismatches; issues none
+PASS
+(55 s)

@@ -1,0 +1,10 @@
+# U4 copy check, 2026-11-16: ATF16V8B programmed from gals/u4/u4.jed (security fuse off; XGpro verify passed)
+# bench: dupico V3 fw 0.3.3, direct seating, GND jumper ZIF 10 -> 21, 100 nF across pins 20-10
+# command: galre.py replay gals/u4/u4_moves_checked_all.tsv --chip 16v8 --seat direct --count 0
+dupico model 3, firmware 0.3.3
+setup: GAL16V8 straight in the dupico ZIF42, top-aligned (chip pin 1 at ZIF 1, lever end); wire from ZIF 10 (the chip's GND pin) to ZIF 21; 100 nF capacitor across the chip's pins 20-10
+power-up state 1011101 (original ['1011101']): same
+replayed 70880 of 70880 moves: 0 mismatches; issues none
+PASS
+(8 min 31 s)
+
