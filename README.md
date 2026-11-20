@@ -12,6 +12,7 @@ measurements behind both, so the card can be repaired, understood and rebuilt.
 | `docs/hardware.md` | How the card works: Autoconfig, address map, registers, what each GAL does, jumpers, connectors |
 | `gals/u3`, `gals/u4`, `gals/u5` | Per-GAL characterisation data and the recovered logic (see below) |
 | `gals/uN/uN_named.pld` / `.jed` | GALasm source with board signal names, and the JEDEC file to program a replacement |
+| `docs/gal-replacements.md` | Replacement GALs programmed from these files, checked against the originals on the bench and in a real Amiga |
 | `schematic/kicad/` | KiCad 10 project: root sheet + 6 sheets, project symbol and footprint libraries, `adscsi2000.pdf`, and the clone PCB (`adscsi2000.kicad_pcb`) |
 | `schematic/kicad/fab/` | Ready-to-order clone PCB: gerbers + drill files (`adscsi2000_gerbers.zip`), BOM, previews, `ORDER_NOTES.txt` |
 | `schematic/netlist/merged.csv` | The measured netlist: 116 nets, 518 pins |
@@ -38,6 +39,10 @@ originals' exact product terms are unknowable. Combinations the circuit can neve
 
 The tools are in the companion repository
 [gal-dupico-re](https://github.com/sbagneris/gal-dupico-re).
+
+**Verified on real chips.** ATF16V8B copies programmed from these JEDEC files replay every recorded move of the
+originals with no mismatch, and run the card in an Amiga 2000 exactly like the originals: same boots, same quirks,
+on both a 68000 and a 68030. See `docs/gal-replacements.md`.
 
 ## The clone PCB
 
@@ -66,7 +71,8 @@ The whole board is reproducible from the scripts in `schematic/tools/`: `pcb_rou
 
 ## Status
 
-- GAL logic recovered and named (fuse maps verified in simulation; programming and testing replacement chips is next).
+- GAL logic recovered and named; replacement ATF16V8B chips programmed from the JEDEC files verified on the bench
+  (every recorded move of the originals) and in the card (drop-in: same behaviour as the originals).
 - Netlist complete and confirmed by continuity on a real card; KiCad schematic generated from it: the exported
   netlist matches the measurements on all 116 nets, ERC clean.
 - Clone PCB designed and ready to order (above); next: build and test it, then a compact SMD version.

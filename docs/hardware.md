@@ -73,7 +73,7 @@ The 5380 is an 8-bit part on the internal data bus (IDB0-7). The data port moves
 
 | | Pins | Function |
 |---|---|---|
-| J1 (2x6) | 1-6 = ID0, ID1, ID2, GAME, B, A; 7-12 = GND (pin 6+k opposite pin k) | Fitted jumper = 0. Read through the status byte; GAME also hides the boot ROM (U3). ROM 1.7 uses B for a 64 KB software read cache and A for the cold-boot spin-up wait (8 s or 20 s) |
+| J1 (2x6) | 1-6 = ID0, ID1, ID2, GAME, B, A; 7-12 = GND (pin 6+k opposite pin k) | Fitted jumper = 0. Read through the status byte; GAME also hides the boot ROM (U3). ROM 1.7 uses B for a 64 KB software read cache and A for the cold-boot spin-up wait (8 s or 20 s; removed gives the short wait, which can be too short for a slow drive) |
 | J2 (1x3, pin 1 = silkscreen notch) | 1 = CDAC, 2 = U4 clock, 3 = E7M | U4's clock source; 1-2 is bridged by a trace on the board |
 | P4 (1x3, pin 1 = notch) | 1 and 3 = LED anode (VCC through R1), 2 = DMALED (U4) | DMA activity LED |
 | P5 (1x4) | 1 = +12 V, 2-3 = GND, 4 = +5 V | Drive power |
@@ -83,6 +83,7 @@ The 5380 is an 8-bit part on the internal data bus (IDB0-7). The data port moves
 ## Known behaviour worth knowing
 
 - On a 68030 accelerator (GVP A3001 tested) some driver builds hang with jumper B fitted and run reliably with it
-  removed. Status bit 4 is Zorro D12, which U7 (status), U10 (read latch) and U8 (bus buffer) can all drive; their
+  removed. The Kickstart version matters too: on Kickstart 3.1 the 4.0 driver did not boot on the 68030 with
+  jumper B fitted or removed (original GALs and replacements alike; see `docs/gal-replacements.md`). Status bit 4 is Zorro D12, which U7 (status), U10 (read latch) and U8 (bus buffer) can all drive; their
   enables (`STATOE`, `RDOE`, `U8OE`) are logically exclusive, so the suspected cause is a short timing overlap on
   fast bus cycles. Under investigation.
